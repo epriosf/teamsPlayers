@@ -9,7 +9,7 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=root
+      - POSTGRES_DB=teamDB
     volumes:
       - ./db:/docker-entrypoint-initdb.d/
   pgadmin:
