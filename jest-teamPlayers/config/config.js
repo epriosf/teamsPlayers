@@ -13,11 +13,11 @@ module.exports = {
     }
   },
   test: {
-    username: 'root',
-    password: 'root',
-    database: 'dbSequelize',
-    host: '127.0.0.1',
-    dialect: 'postgres',
+    username: DEV_USERNAME,
+    password: DEV_PASSWORD,
+    database: DEV_DATABASE,
+    url: DEV_URL,
+    dialect: DEV_DIALECT,
     dialectOptions: {
       bigNumberStrings: true
     }
