@@ -2,7 +2,6 @@ import { getChampion, getTeams } from "../services/team-service";
 
 
 test('Get all the teams from the database;', async()=>{
-    //Setup
     // Execute
     const teams= await getTeams();
     // Validation
