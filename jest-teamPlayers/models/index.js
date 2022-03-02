@@ -10,9 +10,6 @@ if(env==='development'){
   console.log(env, 'Varible de entorno');
 
 }
-else{
-  console.log(env, 'Varible de entorno');
-}
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 

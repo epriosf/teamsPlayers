@@ -7,8 +7,8 @@
     "dialect": "postgres"
   },
   "test": {
-    "username": "root",
-    "password": "root",
+    "username": "root1",
+    "password": "root1",
     "database": "dbSequelize1",
     "host": "127.0.0.1",
     "dialect": "postgres"
