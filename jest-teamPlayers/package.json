@@ -9,8 +9,8 @@
     "down": "npx sequelize-cli db:migrate:undo",
     "make-seed": "npx sequelize-cli seed:generate --name demo-team",
     "run-seed": "npx sequelize-cli db:seed:all",
-    "test": "npm cache clean --force && npx sequelize-cli db:drop --env test && npx sequelize-cli db:create --env test && npx sequelize-cli db:migrate --env test && npx sequelize-cli db:seed:all --env test && jest",
-    "dev": "node index.js",
+    "test": "npm cache clean --force && npx sequelize-cli db:drop --env test && npx sequelize-cli db:create --env test && npx sequelize-cli db:migrate:undo --env test && npx sequelize-cli db:migrate --env test && npx sequelize-cli db:seed:all --env test && jest",
+    "dev": "npm cache clean --force && npx sequelize-cli db:migrate:undo --env test && npx sequelize-cli db:migrate --env test && npx sequelize-cli db:seed:all --env test && jest",
     "start": "node index.js && npx sequelize-cli db:drop --env production"
   },
   "keywords": [
